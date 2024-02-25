@@ -205,7 +205,26 @@ input:focus {
         background-color: var(--filter-bg-color);
     }
 
+/* Bulle info */
 
+.bulle-info {
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 100%;
+}
+
+.info-txt {
+    padding: 6px;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
