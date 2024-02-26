@@ -253,7 +253,37 @@ input:focus {
 }
 
 .hebergements-cards {
-    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    border: 2px solid pink;
+}
+
+.hebergements-cards a {
+    width: 30%;
+}
+
+
+.hebergements-cards img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.hebergements-cards .card-title {
+    margin: 0px;
+    padding: 4px 4px 4px 6px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0px;
+    padding: 2px 2px 2px 6px;
+}
+
+.hebergements-cards .card-rating {
+    padding: 2px 2px 4px 6px;
 }
 
 .hebergements-show-more {
