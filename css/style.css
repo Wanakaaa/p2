@@ -242,6 +242,23 @@ input:focus {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hebergements-title {
+    background-color: yellow;
+    margin: 0px;
+}
+
+.hebergements-cards {
+    background-color: aqua;
+}
+
+.hebergements-show-more {
+    background-color: purple;
+    font-weight: bold;
 }
 
 /****** Populaires ***********/
