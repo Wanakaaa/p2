@@ -264,6 +264,7 @@ input:focus {
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .hebergements-cards .card-title {
@@ -330,6 +331,47 @@ input:focus {
     margin-bottom: 5px;
 }
 
+/* Activités */
+
+.activites {
+    border: 2px solid green;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.activites .title {
+    background-color: yellow;
+    margin: 0px;
+    border: 2px solid blue;
+}
+
+.activites-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 18px;
+}
+
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    border: 2px solid pink;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.activites-cards img {
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activites-cards .card-title {
+    margin: 14px;
+}
 
 
 
