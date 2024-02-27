@@ -144,9 +144,9 @@ a {
     border-radius: 15px 0px 0px 15px;
 }
 
-::placeholder {
+/* ::placeholder {
     color: black;
-}
+} */
 
 .form-placeholder {
     width: fit-content;
@@ -253,20 +253,14 @@ input:focus {
 }
 
 .hebergements-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 16px;
-    border: 2px solid pink;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
 }
-
-.hebergements-cards a {
-    width: 30%;
-}
-
 
 .hebergements-cards img {
-    height: 100px;
+    height: 110px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
