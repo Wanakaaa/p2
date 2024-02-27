@@ -18,11 +18,20 @@ body {
     justify-content: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 a {
@@ -65,6 +74,7 @@ a {
     align-items: flex-start;
     height: 79px;
     width: auto;
+    border: 2px solid green;
 }
 
 .header img {
@@ -96,14 +106,13 @@ a {
 /* Searchbar */
 
 .searchbar-container {
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    border: 2px solid green;
 }
 
 .txt {
-    border: 2px solid blue;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -114,7 +123,6 @@ a {
 }
 
 .formulaire {
-    border: 2px solid plum;
     width: fit-content;
     display: flex;
     align-items: center;
@@ -151,6 +159,9 @@ a {
 .form-placeholder {
     width: fit-content;
     padding-left: 16px;
+    box-sizing: border-box;
+    border-top: 2px solid var(--main-bg-color);
+    border-bottom: 2px solid var(--main-bg-color);
 }
 
 input:focus {
@@ -158,17 +169,17 @@ input:focus {
 }
 
 
-#form-button {
+.form-button {
     background-color: var(--main-color);
     color: white;
     padding: 0px 14px;
     border-radius: 0px 15px 15px 0px;
+
 }
 
 /* Filtres */
 
 .filters {
-    border: 2px solid purple;
     display: flex;
     align-items: center;
     gap: 14px;
@@ -180,14 +191,13 @@ input:focus {
 }
 
 .filters-buttons {
-    border: 2px solid blue;
     display: flex;
     gap: 16px;
     
 }
 
 .filters-item {
-    border: 2px solid #d9d9d9;
+    border: 2px solid var(--main-bg-color);
     font-size: 17px;
     font-weight: bold;
     background-color: white;
@@ -230,6 +240,7 @@ input:focus {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    border: 2px solid green;
 }
 
 .hebergements-and-populaires section {
