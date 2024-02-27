@@ -377,7 +377,25 @@ input:focus {
 
 .footer-container {
     border: 2px solid green;
+    background-color: var(--main-bg-color);
+    display: flex;
 }
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding: 20px;
+    gap: 10px;
+}
+
+.footer-items p {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px;
+}
+
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
