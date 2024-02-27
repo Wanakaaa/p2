@@ -373,7 +373,11 @@ input:focus {
     margin: 14px;
 }
 
+/* Footer */
 
+.footer-container {
+    border: 2px solid green;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
