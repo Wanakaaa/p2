@@ -39,6 +39,15 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-size: 22px;
+}
+
+
+p {
+    font-size: 16px;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -253,6 +262,84 @@ input:focus {
 }
 
 /****** Hebergements ***********/
+/* .hebergements {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.hebergements-title {
+    background-color: yellow;
+    margin: 0px;
+}
+
+
+
+.hebergements-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    gap: 18px;
+}
+
+.hebergements-cards a{
+    display: flex;
+}
+
+
+.hebergements-cards .card-item {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hebergements-cards img {
+    height: 110px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+
+.hebergements-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    flex-grow: 1;
+}
+
+.hebergements-cards .card-title {
+    margin: 0px;
+    padding: 4px 4px 4px 6px;
+}
+
+.hebergements-cards .card .card-subtitle {
+    margin: 0px;
+    padding: 2px 2px 2px 6px;
+}
+
+.hebergements-cards .card .card-content .card-rating {
+    margin-top: auto;
+    padding: 2px 2px 4px 6px;
+}
+
+.hebergements-show-more {
+    background-color: purple;
+    font-weight: bold;
+} */
+
+/* TEST HEBERGEMENT */
+
 .hebergements {
     width: 63%;
     display: flex;
@@ -273,7 +360,19 @@ input:focus {
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-bottom: 5px;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hebergements-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .hebergements-cards .card-title {
@@ -326,8 +425,6 @@ input:focus {
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
@@ -385,8 +482,11 @@ input:focus {
 
 .activites-cards .card-title {
     display: flex;
-    flex-basis: 100%;
     margin: 14px;
+}
+
+.activites-cards .card-subtitle {
+    flex-grow: 1;
 }
 
 
