@@ -254,15 +254,10 @@ input:focus {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 63%;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-}
-
-.hebergements-title {
-    background-color: yellow;
-    margin: 0px;
+    justify-content: space-between;
 }
 
 .hebergements-cards {
@@ -270,6 +265,7 @@ input:focus {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-gap: 20px;
+    border: 2px solid blue;
 }
 
 .hebergements-cards img {
@@ -281,21 +277,24 @@ input:focus {
 }
 
 .hebergements-cards .card-title {
+    padding: 6px 15px 4px;
     margin: 0px;
-    padding: 4px 4px 4px 6px;
 }
 
 .hebergements-cards .card-subtitle {
+    padding: 4px 15px 8px;
     margin: 0px;
-    padding: 2px 2px 2px 6px;
 }
 
 .hebergements-cards .card-rating {
-    padding: 2px 2px 4px 6px;
+    display: flex;
+    align-items: flex-end;
+    flex: 1; 
+    padding: 0px 0px 15px 15px;
 }
 
-.hebergements-show-more {
-    background-color: purple;
+.hebergements .hebergements-show-more {
+    font-size: 18px;
     font-weight: bold;
 }
 
