@@ -40,13 +40,9 @@ a {
     text-decoration: none;
 }
 
-h2 {
-    font-size: 22px;
-}
-
-
 p {
     font-size: 16px;
+    margin: 0px;
 }
 
 .section-title {
@@ -81,9 +77,6 @@ p {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    height: 79px;
-    width: auto;
 }
 
 .header img {
@@ -95,8 +88,6 @@ p {
 .nav-liens {
     display: flex;
     gap: 68px;
-    height: 35px;
-    align-items: flex-end;
 }
 
 .nav-liens a{
@@ -112,7 +103,7 @@ p {
         }
 
 
-/* Searchbar */
+    /* Searchbar */
 
 .searchbar-container {
     display: flex;
@@ -126,27 +117,15 @@ p {
     gap: 8px;
 }
 
-.txt h2, .txt p {
-    margin: 0px;
-}
-
-.formulaire {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
 .form-container {
     display: flex;
 }
 
 .form-items {
     height: 49px;
-    margin: 0px;
     border: none;
     font-size: 18px;
     font-weight: bold;
-    padding: 0px;
 }
 
 .form-container .fa-solid {
@@ -175,7 +154,6 @@ input:focus {
     outline: none;
 }
 
-
 .form-button {
     background-color: var(--main-color);
     color: white;
@@ -186,13 +164,13 @@ input:focus {
 
 /* Filtres */
 
-.filters {
+.filters-container {
     display: flex;
     align-items: center;
     gap: 14px;
 }
 
-.filter-title {
+.filters-title {
     font-size: 18px;
     font-weight: bold;
 }
@@ -223,12 +201,12 @@ input:focus {
 
 /* Bulle info */
 
-.bulle-info {
+.bulle-info-container {
     display: flex;
     align-items: center;
 }
 
-.info-icon {
+.bulle-info-icon {
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -238,7 +216,7 @@ input:focus {
     border-radius: 100%;
 }
 
-.info-txt {
+.bulle-info-txt {
     padding: 6px;
 }
 
@@ -264,10 +242,6 @@ input:focus {
     justify-content: space-between;
 }
 
-.hebergements .hebergements-title {
-    margin: 0px;
-}
-
 .hebergements-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -276,10 +250,10 @@ input:focus {
 }
 
 .hebergements-cards img {
+    /* border: 2px solid blue; */
     min-height: 110px;
     height: 110px;
     width: 100%;
-    object-fit: cover;
     border-radius: 15px 15px 0px 0px;
     margin-bottom: 5px;
 }
