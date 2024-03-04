@@ -257,7 +257,7 @@ input:focus {
 }
 
 .hebergements-cards img {
-    min-height: 110px;
+    
     height: 110px;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
@@ -267,6 +267,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     height: 100%;
+    flex: 1;
 }
 
 .hebergements-cards .card-title {
@@ -529,6 +530,8 @@ input:focus {
     .form-container {
         display: flex;
         width: 100%;
+        border: 2px solid grey;
+        
     }
 
     .form-items {
