@@ -16,6 +16,8 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -121,6 +123,10 @@ p {
     display: flex;
 }
 
+.icon-mobile {
+    display: none;
+}
+
 .form-items {
     height: 49px;
     border: none;
@@ -136,7 +142,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 12px 0px 0px 12px;
 }
 
 /* ::placeholder {
@@ -510,68 +516,57 @@ input:focus {
 
     /* Formulaire */
 
+        /* searchbar */
     .searchbar-container {
         padding: 20px;
     }
 
-    .form-button span {
-        display: none;
-    }
-
-    .form-button {
-        border-radius: 15px;
-    }
-
-    .form-button::after {
-        content: "\f002";
-        font-family: "Font Awesome 5 Free";
-    }
-    
     .form-container {
         display: flex;
         width: 100%;
-        border: 2px solid grey;
-        
+        box-sizing: border-box;
+        border: 2px solid var(--main-bg-color); 
+        border-radius: 15px;
     }
 
-    .form-items {
-        /* flex-shrink: 1; */
+    .form-placeholder {
+        border: none;
+    }
+
+    .recherche-button {
+        display: none;
+    }
+
+    .icon-mobile {
+        display: block;
+    }
+
+    .form-container .fa-magnifying-glass{
+        background-color: var(--main-color);
+        color: white;
+        padding: 0px;
+    }
+    
+    .border-magnifying-glass {
+        background-color: var(--main-color);
+        outline: 2px solid var(--main-color);
+        border-radius: 15px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+    }
+
+    .form-button {
+        margin: 0px;
+        padding: 0px;
+        border: 2px solid var(--main-color);
+        border-radius: 12px;
+        display: block;
     }
 
     .form-container input {
         flex: 1;
         min-width: 0;
     }
-
-    /* .filters {
-        flex-wrap: wrap;
-    }
-
-    .filter-title {
-        box-sizing: border-box;
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .filters-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .filters-item {
-        flex: 1 1 45%;
-        flex-shrink: 1;
-        display: flex;
-        font-size: 13px;
-    }
-
-    .filters-item i {
-        justify-content: flex-start;
-        padding-left: 8px;
-    } */
+        /* ^ searchbar ^ */
 
     .filters-title {
         font-size: 14px;
@@ -640,14 +635,9 @@ input:focus {
 
     /* hebergements */
 
-    /* .hebergements-cards {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-gap: 16px;
-        box-sizing: border-box;
-    } */
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+    }
 
     .hebergements-cards {
         display: flex;
@@ -673,5 +663,6 @@ input:focus {
 
     .footer-items {
         padding: 0px;
+        gap: 15px;
     }
 }
