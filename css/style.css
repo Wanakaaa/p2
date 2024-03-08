@@ -245,14 +245,14 @@ input:focus {
     width: 63%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .hebergements-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 16px;
+    grid-gap: 30px;
 }
 
 .hebergements-cards .card {
@@ -607,6 +607,10 @@ input:focus {
         gap: 30px;
     }
 
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+    }
+    
     .populaires {
         margin: 0px;
         display: flex;
