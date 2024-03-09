@@ -92,7 +92,7 @@ p {
     gap: 68px;
 }
 
-.nav-liens a{
+.nav-liens a {
     padding-top: 15px;
 }
 
@@ -105,9 +105,9 @@ p {
         }
 
 
-    /* Searchbar */
+    /* Search */
 
-.searchbar-container {
+.search-container {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -242,59 +242,61 @@ input:focus {
 /****** Hebergements ***********/
 
 .hebergements {
-    width: 63%;
+    width: 65%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 18px;
 }
 
 .hebergements-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
 }
 
-.hebergements-cards .card {
+.hebergements-cards a {
+    width: 30%;
     display: flex;
-    flex-direction: column;
-    height: 100%;
     box-sizing: border-box;
 }
 
-.hebergements-cards img {
-    
-    height: 110px;
+.hebergements-cards .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hebergements-cards .card img{
     width: 100%;
+    height: 124px;
     border-radius: 15px 15px 0px 0px;
 }
 
 .hebergements-cards .card-content {
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
-    height: 100%;
     flex: 1;
 }
 
 .hebergements-cards .card-title {
-    padding: 6px 15px 0px;
-    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 4px;
 }
 
 .hebergements-cards .card-subtitle {
-    padding: 4px 15px 8px;
-    font-size: 14px;
+    margin: 0;
 }
 
 .hebergements-cards .card-rating {
+    padding-bottom: 5px;
+    padding-top: 8px;
     display: flex;
-    align-items: flex-end;
-    flex: 1; 
-    padding: 8px 0px 15px 15px;
+    margin-top: auto;
 }
 
-.hebergements .hebergements-show-more {
-    font-size: 18px;
+.show-more-link {
     font-weight: bold;
 }
 
@@ -361,12 +363,12 @@ input:focus {
     padding: 0px;
 }
 
-.activites-cards .card-item {
+/* .activites-cards .card-item ne sert à rien ?? (était sur article class.{
     height: 100%;
     width: 100%;
     padding: 0px;
     box-sizing: border-box;
-}
+} */
 
 .activites-cards .card img {
     height: 380px;
@@ -456,16 +458,13 @@ input:focus {
     
     /* hebergements */
 
+
     .hebergements-cards .card-title {
         font-size: 14px;
     }
 
     .hebergements-cards .card-subtitle {
         font-size: 13px;
-    }
-
-    .hebergements-cards .card-rating {
-        padding: 2px 0px 15px 15px;
     }
 
     /* activites */
@@ -516,8 +515,8 @@ input:focus {
 
     /* Formulaire */
 
-        /* searchbar */
-    .searchbar-container {
+        /* search */
+    .search-container {
         padding: 20px;
     }
 
@@ -566,7 +565,7 @@ input:focus {
         flex: 1;
         min-width: 0;
     }
-        /* ^ searchbar ^ */
+        /* ^ search ^ */
 
     .filters-title {
         font-size: 14px;
@@ -604,7 +603,7 @@ input:focus {
     /* populaires */
 
     .hebergements-and-populaires {
-        gap: 30px;
+        gap: 18px;
     }
 
     .hebergements-and-populaires section {
@@ -646,6 +645,10 @@ input:focus {
     .hebergements-cards {
         display: flex;
         flex-direction: column;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
     }
 
     /* activites */
