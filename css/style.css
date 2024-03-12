@@ -432,22 +432,11 @@ input:focus {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    .card-title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-    /* ^ hebergement et populaires */
-    
-    /* hebergements */
-
-    .hebergements-cards .card-title {
-        font-size: 14px;
-    }
-
-    .hebergements-cards .card-subtitle {
+    .card-subtitle {
         font-size: 13px;
     }
 
@@ -525,7 +514,7 @@ input:focus {
         display: block;
     }
 
-    .form-container .fa-magnifying-glass{
+    .form-container .fa-magnifying-glass {
         background-color: var(--main-color);
         color: white;
         padding: 0px;
